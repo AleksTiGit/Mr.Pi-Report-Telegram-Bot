@@ -7,7 +7,7 @@ report_list = ['Репорты:']
 @bot.message_handler(commands=['report'])
 def report(message):
     report_message_id = message.message_id
-    message_text_report = 'Репорт отправлен'
+    message_text_report = '_Репорт отправлен\nНиже пришлите фотографию-доказательство_'
     bot.reply_to(message,message_text_report,parse_mode='Markdown')
     report_list.append(f'Репорт https://t.me/c/chat-id/{report_message_id}')
 
